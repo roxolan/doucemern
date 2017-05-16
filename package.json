@@ -1,0 +1,23 @@
+{
+  "name": "doucemern",
+  "version": "1.0.0",
+  "descriptiion": "MERN-based full-stack application",
+  "author": "Viktor Kotusenko",
+  "scripts": {
+    "lint": "standard",
+    "start": "webpack-dev-server"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "file-loader": "^0.11.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
