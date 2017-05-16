@@ -7,6 +7,17 @@
     "lint": "standard",
     "start": "webpack-dev-server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roxolan/doucemern.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "express",
+    "mongodb",
+    "mern"
+  ],
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -17,6 +28,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "express": "^4.15.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }
