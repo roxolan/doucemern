@@ -9,6 +9,8 @@ var MyTitle = React.createClass({
   }
 });
 
-var MyFirstComponent = div(null, React.createElement(MyTitle, null), React.createElement(MyTitle, null), React.createElement(MyTitle, null));
+var MyTitleFact = React.createFactory(MyTitle);
+
+var MyFirstComponent = div(null, MyTitleFact(null), MyTitleFact(null), MyTitleFact(null), MyTitleFact(null));
 
 ReactDOM.render(MyFirstComponent, document.getElementById('app'));

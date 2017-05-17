@@ -2,7 +2,7 @@ var div = React.DOM.div
 var h1 = React.DOM.h1
 
 var MyTitle = React.createClass({
-  render() {
+  render () {
     return (
       div(null,
           h1(null, 'Yob Search Platform')
@@ -11,11 +11,15 @@ var MyTitle = React.createClass({
   }
 })
 
+var MyTitleFact = React.createFactory(MyTitle)
+
 var MyFirstComponent = (
   div(null,
-      React.createElement(MyTitle, null),
-      React.createElement(MyTitle, null),
-      React.createElement(MyTitle, null))
+    MyTitleFact(null),
+    MyTitleFact(null),
+    MyTitleFact(null),
+    MyTitleFact(null)
+  )
 )
 
 ReactDOM.render(MyFirstComponent, document.getElementById('app'))
