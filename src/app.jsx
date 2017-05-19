@@ -1,3 +1,6 @@
+import React from 'react'
+import { render } from 'react-dom'
+
 var div = React.DOM.div
 var h1 = React.DOM.h1
 
@@ -22,4 +25,4 @@ var MyFirstComponent = (
   )
 )
 
-ReactDOM.render(MyFirstComponent, document.getElementById('app'))
+render(MyFirstComponent, document.getElementById('app'))
