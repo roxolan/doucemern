@@ -5,7 +5,7 @@ var MyTitle = React.createClass({
   render () {
     return (
       div(null,
-          h1(null, this.props.title)
+          h1({style: {color: this.props.color}}, this.props.title)
          )
     )
   }
@@ -15,10 +15,10 @@ var MyTitleFact = React.createFactory(MyTitle)
 
 var MyFirstComponent = (
   div(null,
-    MyTitleFact({title: 'Make sure you find the best job platform'}),
-    MyTitleFact({title: 'That also suits your needs'}),
-    MyTitleFact({title: 'And is not too expensive'}),
-    MyTitleFact({title: 'And is global, too!'})
+    MyTitleFact({title: 'Make sure you find the best job platform', color: 'mediumaquamarine'}),
+    MyTitleFact({title: 'That also suits your needs', color: 'peru'}),
+    MyTitleFact({title: 'And is not too expensive', color: 'rebeccapurple'}),
+    MyTitleFact({title: 'And is global, too!', color: 'turquoise'})
   )
 )
 
