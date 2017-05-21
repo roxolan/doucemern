@@ -4,9 +4,9 @@
   "descriptiion": "MERN-based full-stack application",
   "author": "Viktor Kotusenko",
   "scripts": {
-    "compile": "babel src --presets env --out-dir static",
+    "babel:compile": "babel src --presets env --out-dir static",
+    "babel:watch": "babel src --presets env --out-dir static --watch",
     "lint": "standard",
-    "watch": "babel src --presets env --out-dir static --watch",
     "webpack": "webpack-dev-server"
   },
   "repository": {
