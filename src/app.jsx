@@ -3,11 +3,13 @@ import { render } from 'react-dom'
 import Title from './Title.jsx'
 
 var div = React.DOM.div
-
 var TitleFact = React.createFactory(Title)
 
-var MyFirstComponent = (
+const countries = ['USA', 'Canada', 'UK', 'Ireland']
+const message = countries.map(c => `Salve ${c}!`).join(' ')
+const greeting = <p>{message}</p>
 
+var JobPlatformSummoning = (
   div(null,
     TitleFact({title: 'Make sure you find the best job platform', color: 'mediumaquamarine'}),
     TitleFact({title: 'That also suits your needs', color: 'peru'}),
@@ -16,4 +18,5 @@ var MyFirstComponent = (
   )
 )
 
-render(MyFirstComponent, document.getElementById('app'))
+render(JobPlatformSummoning, document.getElementById('app'))
+render(greeting, document.getElementById('greeting'))
