@@ -6,13 +6,13 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, '/static'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
         enforce: 'pre',
         use: {
           loader: 'babel-loader',
@@ -28,5 +28,8 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
   }
 }

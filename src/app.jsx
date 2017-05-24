@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Title from './Title.jsx'
+import Title from './Title'
 
 var div = React.DOM.div
 var TitleFact = React.createFactory(Title)
