@@ -1,14 +1,19 @@
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   context: __dirname,
-  entry: './src/app.jsx',
-  devtool: 'source-map',
+  entry: {
+    app: './src/app.jsx',
+    vendor: ['react', 'react-dom', 'babel-polyfill']
+  },
   output: {
     path: path.join(__dirname, '/static'),
-    filename: 'bundle.js',
-    libraryTarget: 'commonjs2'
+    filename: 'app.bundle.js'
   },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.bundle.js'})
+  ],
   module: {
     rules: [
       {
