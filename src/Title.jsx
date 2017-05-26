@@ -3,7 +3,7 @@ import React from 'react'
 var h1 = React.DOM.h1
 var div = React.DOM.div
 
-var Title = React.createClass({
+class Title extends React.Component {
   render () {
     return (
       div(null,
@@ -11,6 +11,6 @@ var Title = React.createClass({
       )
     )
   }
-})
+}
 
 export default Title

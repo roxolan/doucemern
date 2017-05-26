@@ -4,7 +4,7 @@ const webpack = require('webpack')
 module.exports = {
   context: __dirname,
   entry: {
-    app: './src/app.jsx',
+    app: './src/App.jsx',
     vendor: ['react', 'react-dom', 'babel-polyfill']
   },
   output: {
