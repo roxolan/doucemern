@@ -7,25 +7,26 @@
     "babel:compile": "babel src --presets react,es2015 --out-dir static",
     "babel:watch": "babel src --presets env --out-dir static --watch",
     "lint": "standard",
-    "webpack": "webpack-dev-server"
+    "webpack": "webpack-dev-server  --config webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roxolan/doucemern.git"
   },
   "keywords": [
+    "babel",
+    "express",
+    "mern",
+    "mongodb",
     "node",
     "react",
-    "express",
-    "mongodb",
-    "mern"
+    "webpack"
   ],
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "file-loader": "^0.11.1",
