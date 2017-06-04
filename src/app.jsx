@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom' 
+import ReactDOM from 'react-dom'
 import PlatformFilter from './Filter'
 import PlatformTable from './Table'
 import PlatformAdd from './Add'
