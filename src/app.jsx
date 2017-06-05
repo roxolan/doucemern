@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PlatformFilter from './Filter'
 import PlatformTable from './Table'
@@ -6,7 +6,7 @@ import PlatformAdd from './Add'
 
 const contentNode = document.getElementById('contents')
 
-class PlatformList extends React.Component {
+class PlatformList extends Component {
   render () {
     return (
       <div>
