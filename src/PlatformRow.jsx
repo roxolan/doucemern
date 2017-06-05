@@ -6,7 +6,7 @@ class PlatformRow extends React.Component {
     return (
       <tr>
         <td style={borderedStyle}>{this.props.platform_id}</td>
-        <td style={borderedStyle}>{this.props.platform_title}</td>
+        <td style={borderedStyle}>{this.props.children}</td>
       </tr>
     )
   }

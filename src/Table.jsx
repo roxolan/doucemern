@@ -14,8 +14,9 @@ class PlatformTable extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <PlatformRow platform_id={1} platform_title="Indeed" />
-          <PlatformRow platform_id={2} platform_title="Glassdoor" />
+          <PlatformRow platform_id={1}>Indeed</PlatformRow>
+          <PlatformRow platform_id={2}>Glassdoor</PlatformRow>
+          <PlatformRow platform_id={3}>SimplyHired</PlatformRow>
         </tbody>
       </table>
     )
