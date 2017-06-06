@@ -6,6 +6,24 @@ import PlatformAdd from './Add'
 
 const contentNode = document.getElementById('contents')
 
+const platforms = [
+  {
+    id: 1,
+    created: new Date('2017-06-04'),
+    title: 'Indeed'
+  },
+  {
+    id: 2,
+    created: new Date('2017-06-04'),
+    title: 'Glassdoor'
+  },
+  {
+    id: 3,
+    created: new Date('2017-06-04'),
+    title: 'SimplyHired'
+  }
+]
+
 class PlatformList extends Component {
   render () {
     return (
@@ -13,7 +31,7 @@ class PlatformList extends Component {
         <h1>Platform Tracker</h1>
         <PlatformFilter />
         <hr />
-        <PlatformTable />
+        <PlatformTable platforms={platforms} />
         <hr />
         <PlatformAdd />
       </div>

@@ -1,23 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PlatformRow from './PlatformRow'
 
-class PlatformTable extends React.Component {
+class PlatformTable extends Component {
   render () {
-    const borderedStyle = {border: "1px solid silver", padding: 6}
+    const platformRows = this.props.platforms.map(platform => <PlatformRow key={platform.id} platform={platform} />)
 
     return (
-      <table style={{borderCollapse: "collapse"}}>
+      <table className="bordered-table">
         <thead>
           <tr>
-            <th style={borderedStyle}>Id</th>
-            <th style={borderedStyle}>Title</th>
+            <th>Id</th>
+            <th>Created</th>
+            <th>Title</th>
           </tr>
         </thead>
-        <tbody>
-          <PlatformRow platform_id={1}>Indeed</PlatformRow>
-          <PlatformRow platform_id={2}>Glassdoor</PlatformRow>
-          <PlatformRow platform_id={3}>SimplyHired</PlatformRow>
-        </tbody>
+        <tbody>{platformRows}</tbody>
       </table>
     )
   }

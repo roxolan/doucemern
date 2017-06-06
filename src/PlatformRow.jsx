@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-class PlatformRow extends React.Component {
+class PlatformRow extends Component {
   render () {
-    const borderedStyle = {border: "1px solid silver", padding: 4}
+    const platform = this.props.platform
     return (
       <tr>
-        <td style={borderedStyle}>{this.props.platform_id}</td>
-        <td style={borderedStyle}>{this.props.children}</td>
+        <td>{platform.id}</td>
+        <td>{platform.created.toDateString()}</td>
+        <td>{platform.title}</td>
       </tr>
     )
   }
